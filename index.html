@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/weather 64.png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <title>Weather app! - Find your home</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="photo"></div>
+      <img class="main-img" src="img/weather 64.png" />
+      <div class="main-info hidden">
+        <div class="main-name">
+          Created by: <strong>Podolinsky Mario</strong>
+        </div>
+        <a
+          class="btn-git-hub"
+          target="_blank"
+          href="https://github.com/Mayooo31"
+        >
+          <img class="git-hub-img" src="img/GitHub-32px.png" />
+        </a>
+      </div>
+      <div class="time">
+        <!-- <div class="time-photo"></div> -->
+      </div>
+      <div class="date">
+        <!-- <div class="date-photo"></div> -->
+      </div>
+      <div class="cors">
+        <!-- <div class="cors-photo"></div> -->
+      </div>
+      <div class="city">
+        <!-- <div class="city-photo"></div> -->
+      </div>
+
+      <div class="error">Could not find this city... Try another one! 🛒🤬</div>
+
+      <form class="info-on-photo">
+        <input class="input-search" type="text" placeholder="Rio, Brazil..." />
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon-search"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      </form>
+      <div class="info">
+        <button class="units-button">...</button>
+        <div class="info-current">
+          <!-- <div class="current-item current--1">
+            <p class="current-temp">32&#176;C</p>
+            <p class="current-feels_like">feels like: 26&#176;C</p>
+          </div>
+          <div class="current-item current--2">
+            <p class="current-description">Clear sky</p>
+            <div class="img-humidity">
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                alt="icon of weather"
+                class="icon-weather--current"
+              />
+            </div>
+          </div>
+-->
+          <!-- <div class="slider">
+            <div class="current-item slide current--3">
+              <li class="current-feels_like">
+                <span>highest temperature:</span>
+              </li>
+              <li class="current-feels_like">
+                <span>lowest temperature:</span>
+              </li>
+              <li class="current-feels_like"></li>
+            </div>
+
+            <div class="current-item slide current--3">
+              <li class="current-feels_like">fd</li>
+              <li class="current-feels_like">fd</li>
+              <li class="current-feels_like">f</li>
+            </div>
+
+            <div class="current-item slide current--3">
+              <li class="current-feels_like">fd</li>
+              <li class="current-feels_like">fd</li>
+              <li class="current-feels_like">fd</li>
+            </div>
+          </div> -->
+        </div>
+        <div class="info-daily">
+          <!-- <div class="weather-item">
+            <div class="day">Mon</div>
+            <img
+              src="http://openweathermap.org/img/wn/01d@2x.png"
+              alt="icon of weather"
+              class="icon-weather"
+            />
+            <div class="temp">25.6&#176; C</div>
+            <div class="temp">35.6&#176; C</div>
+          </div>
+          <div class="weather-item">
+            <div class="day">Tue</div>
+            <img
+              src="http://openweathermap.org/img/wn/01d@2x.png"
+              alt="icon of weather"
+              class="icon-weather"
+            />
+            <div class="temp">25.6&#176; C</div>
+            <div class="temp">35.6&#176; C</div>
+          </div>
+          <div class="weather-item">
+            <div class="day">Wed</div>
+            <img
+              src="http://openweathermap.org/img/wn/01d@2x.png"
+              alt="icon of weather"
+              class="icon-weather"
+            />
+            <div class="temp">25.6&#176; C</div>
+            <div class="temp">35.6&#176; C</div>
+          </div>
+          <div class="weather-item">
+            <div class="day">Thur</div>
+            <img
+              src="http://openweathermap.org/img/wn/01d@2x.png"
+              alt="icon of weather"
+              class="icon-weather"
+            />
+            <div class="temp">25.6&#176; C</div>
+            <div class="temp">35.6&#176; C</div>
+          </div>
+          <div class="weather-item">
+            <div class="day">Fri</div>
+            <img
+              src="http://openweathermap.org/img/wn/01d@2x.png"
+              alt="icon of weather"
+              class="icon-weather"
+            />
+            <div class="temp">25.6&#176; C</div>
+            <div class="temp">35.6&#176; C</div>
+          </div>
+          <div class="weather-item">
+            <div class="day">Sat</div>
+            <img
+              src="http://openweathermap.org/img/wn/01d@2x.png"
+              alt="icon of weather"
+              class="icon-weather"
+            />
+            <div class="temp">25.6&#176; C</div>
+            <div class="temp">35.6&#176; C</div>
+          </div> -->
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

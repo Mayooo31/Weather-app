@@ -1,0 +1,16 @@
+{
+  "name": "weather-app---find-your-home",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.20.1",
+    "parcel": "^2.0.1",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
