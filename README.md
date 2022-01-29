@@ -1,6 +1,6 @@
 # Weather App
 
-Muj prvni projekt ktery jsem udelal sam od zakladu.
+
 
 ## Co jsem pouzil
 HTML CSS JS 🤣
