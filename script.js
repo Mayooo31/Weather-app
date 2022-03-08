@@ -20,9 +20,6 @@ const btnUnits = document.querySelector(".units-button");
 const icocMain = document.querySelector(".main-img");
 const infoAboutMe = document.querySelector(".main-info");
 const invis = document.querySelector(".invis");
-const kokot0 = document.querySelector(".kokot0");
-const kokot1 = document.querySelector(".kokot1");
-const kokot2 = document.querySelector(".kokot2");
 const hidden = document.querySelector(".hidden");
 const error = document.querySelector(".error");
 
